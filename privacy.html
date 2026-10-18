@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sentrybell privacy policy</title>
+<meta name="robots" content="index,follow">
+<style>
+  :root { --bg:#ffffff; --fg:#1b2430; --muted:#566274; --line:#d9e0e8; --accent:#1b6fc2; --warn-bg:#fff4d6; --warn-fg:#6a4b00; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#10161f; --fg:#e6ebf2; --muted:#9aa7b8; --line:#2a3544; --accent:#6db4ff; --warn-bg:#3b2f0c; --warn-fg:#ffd98a; }
+  }
+  html { background:var(--bg); }
+  body { margin:0 auto; max-width:46rem; padding:1.5rem 1rem 4rem; background:var(--bg); color:var(--fg);
+         font:1rem/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size:1.9rem; line-height:1.2; margin:0 0 .25rem; }
+  h2 { font-size:1.25rem; margin:2rem 0 .5rem; padding-top:.5rem; border-top:1px solid var(--line); }
+  p, li { margin:.5rem 0; }
+  a { color:var(--accent); }
+  .muted { color:var(--muted); }
+  .fill-in { background:var(--warn-bg); color:var(--warn-fg); padding:.1rem .4rem; border-radius:.25rem; }
+  table { border-collapse:collapse; width:100%; margin:.75rem 0; font-size:.95rem; }
+  th, td { border:1px solid var(--line); padding:.45rem .6rem; text-align:left; vertical-align:top; }
+  th { background:rgba(127,127,127,.1); }
+  nav { margin:.75rem 0 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <nav><a href="./">&larr; Sentrybell</a></nav>
+  <h1>Sentrybell privacy policy</h1>
+  <p class="muted">Last updated: 17 October 2026 · <a href="#es">Versión en español</a></p>
+</header>
+
+<main>
+<section id="en">
+
+<p><strong>In short:</strong> Sentrybell reads the notifications of the Tapo and Kasa apps on your phone to ring an
+alarm. Everything it reads and keeps stays on your phone. We have no servers, no accounts, no ads and no analytics, and
+we never receive your notifications, your camera names or your history.</p>
+
+<h2>Who we are</h2>
+<p>Sentrybell is published by T&amp;G Alphalabs (&ldquo;we&rdquo;). You can reach us at
+<a href="mailto:contact@tgalphalabs.com">contact@tgalphalabs.com</a>.</p>
+
+<h2>What Sentrybell reads</h2>
+<p>To work, Sentrybell needs <strong>notification access</strong>, which you grant in Android&rsquo;s settings after
+Sentrybell explains it. Android then offers Sentrybell the phone&rsquo;s notifications. Sentrybell looks at which app
+posted each one and <strong>ignores every app except the Tapo app and the Kasa Smart app</strong>, without reading or
+keeping anything from the others.</p>
+<p>For a Tapo or Kasa notification, Sentrybell reads its title and text, only on your phone, to find which camera
+reported what (person, motion, pet or tamper) and to decide whether to ring the alarm. It does not connect to your
+cameras and cannot see video.</p>
+
+<h2>What Sentrybell keeps on your phone</h2>
+<ul>
+  <li><strong>Your cameras and settings:</strong> the camera names you type and the settings you choose for each
+  (events, hours, sound, volume, tone and so on).</li>
+  <li><strong>History:</strong> for each Tapo or Kasa alert, the time, the camera name as it appeared in the
+  notification (also for a camera you have not set up), the kind of event, and what Sentrybell did with it. It keeps
+  the most recent 500 entries. You can clear it at any time from the History screen.</li>
+  <li><strong>Whether Pro is unlocked.</strong></li>
+  <li><strong>Diagnostics recording (off by default):</strong> if you switch it on, Sentrybell also keeps the raw
+  text of up to the 100 most recent Tapo and Kasa notifications, so detection can be tuned. Switch it off and use
+  Clear when you are done.</li>
+</ul>
+<p>This data is stored in the app&rsquo;s private storage. It is excluded from Android&rsquo;s cloud backup and
+device-to-device transfer, so it does not leave your phone that way either.</p>
+
+<h2>What we do not do</h2>
+<ul>
+  <li>We do not collect, receive or have access to your notifications, camera names, history or settings.</li>
+  <li>There is no account, no advertising, no analytics and no crash reporting in Sentrybell.</li>
+  <li>Sentrybell&rsquo;s own code never connects to the internet or sends your data anywhere.</li>
+</ul>
+
+<h2>Google Play and the Pro purchase</h2>
+<p>Pro is a one-time purchase handled entirely by Google Play. Sentrybell is told only whether the purchase is
+complete; we never see your payment details. Because Sentrybell includes Google&rsquo;s Play Billing library, the app
+declares network access so that library can talk to Google Play. Whatever that library sends to Google is governed by
+<a href="https://policies.google.com/privacy">Google&rsquo;s Privacy Policy</a>, not by us.</p>
+
+<h2>Files you create</h2>
+<p><strong>Export settings</strong> saves your camera names and settings to a file in a place you choose, and
+Diagnostics&rsquo; <strong>Share</strong> sends the recorded notification text to the app you choose. Those files are
+yours; keep or delete them as you like.</p>
+
+<h2>Permissions, and why</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Notification access</td><td>To read the Tapo and Kasa notifications, as described above.</td></tr>
+  <tr><td>Post notifications</td><td>To show the alarm&rsquo;s notification with its STOP button, and a note when an alarm went unstopped.</td></tr>
+  <tr><td>Full-screen alarm and display over other apps</td><td>To open the alarm over the lock screen and over the app you are using.</td></tr>
+  <tr><td>Foreground service (media playback), wake lock, vibration</td><td>To keep the alarm sounding and vibrating until you stop it. The flashlight is used the same way, with no camera access.</td></tr>
+  <tr><td>Run without battery restrictions</td><td>So Android does not put the alarm to sleep. Optional; you tap it yourself in Setup.</td></tr>
+  <tr><td>Network, and Google Play billing</td><td>Added by Google&rsquo;s Play Billing library for the Pro purchase.</td></tr>
+</table>
+
+<h2>Your choices</h2>
+<ul>
+  <li>Turn notification access off at any time in Android&rsquo;s settings; Sentrybell then reads nothing.</li>
+  <li>Delete a camera, clear the History, and clear Diagnostics from inside the app.</li>
+  <li>Uninstalling Sentrybell removes everything it stored on your phone.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Sentrybell is a home-security tool for adults and is not directed to children.</p>
+
+<h2>Independence</h2>
+<p>Sentrybell is an independent app. It is not made, endorsed or supported by TP-Link. Tapo and Kasa are trademarks
+of TP-Link, named here only to say which apps&rsquo; notifications Sentrybell reads.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the new version will be published at this address with a new date at the top.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:contact@tgalphalabs.com">contact@tgalphalabs.com</a></p>
+
+</section>
+
+<hr>
+
+<section id="es" lang="es">
+
+<h1>Política de privacidad de Sentrybell</h1>
+<p class="muted">Última actualización: 17 de octubre de 2026 · <a href="#en">English version</a></p>
+
+<p><strong>En breve:</strong> Sentrybell lee las notificaciones de las apps Tapo y Kasa de tu teléfono para hacer
+sonar una alarma. Todo lo que lee y guarda se queda en tu teléfono. No tenemos servidores, cuentas, anuncios ni
+analíticas, y nunca recibimos tus notificaciones, los nombres de tus cámaras ni tu historial.</p>
+
+<h2>Quiénes somos</h2>
+<p>Sentrybell la publica T&amp;G Alphalabs («nosotros»). Puedes escribirnos a
+<a href="mailto:contact@tgalphalabs.com">contact@tgalphalabs.com</a>.</p>
+
+<h2>Qué lee Sentrybell</h2>
+<p>Para funcionar, Sentrybell necesita <strong>acceso a las notificaciones</strong>, que concedes en los ajustes de
+Android después de que Sentrybell te lo explique. Android entonces le ofrece las notificaciones del teléfono.
+Sentrybell mira qué app publicó cada una e <strong>ignora todas las apps salvo la app Tapo y la app Kasa
+Smart</strong>, sin leer ni guardar nada de las demás.</p>
+<p>De una notificación de Tapo o Kasa, Sentrybell lee el título y el texto, solo en tu teléfono, para saber qué
+cámara avisó de qué (persona, movimiento, mascota o manipulación) y decidir si hace sonar la alarma. No se conecta a
+tus cámaras y no puede ver vídeo.</p>
+
+<h2>Qué guarda Sentrybell en tu teléfono</h2>
+<ul>
+  <li><strong>Tus cámaras y ajustes:</strong> los nombres de cámara que escribes y los ajustes de cada una (eventos,
+  horario, sonido, volumen, tono, etc.).</li>
+  <li><strong>Historial:</strong> de cada alerta de Tapo o Kasa, la hora, el nombre de la cámara tal como aparecía en
+  la notificación (también si no has configurado esa cámara), el tipo de evento y lo que hizo Sentrybell. Conserva las
+  500 entradas más recientes. Puedes borrarlo cuando quieras desde la pantalla Historial.</li>
+  <li><strong>Si Pro está desbloqueado.</strong></li>
+  <li><strong>Registro de diagnóstico (desactivado por defecto):</strong> si lo activas, Sentrybell también guarda el
+  texto original de hasta las 100 notificaciones más recientes de Tapo y Kasa, para ajustar la detección.
+  Desactívalo y usa Borrar cuando termines.</li>
+</ul>
+<p>Estos datos se guardan en el almacenamiento privado de la app. Quedan excluidos de la copia de seguridad en la nube
+de Android y de la transferencia entre dispositivos, así que tampoco salen de tu teléfono por ahí.</p>
+
+<h2>Lo que no hacemos</h2>
+<ul>
+  <li>No recopilamos, recibimos ni tenemos acceso a tus notificaciones, nombres de cámara, historial o ajustes.</li>
+  <li>Sentrybell no tiene cuenta, publicidad, analíticas ni informes de errores.</li>
+  <li>El código propio de Sentrybell nunca se conecta a internet ni envía tus datos a ningún sitio.</li>
+</ul>
+
+<h2>Google Play y la compra de Pro</h2>
+<p>Pro es un pago único gestionado íntegramente por Google Play. A Sentrybell solo se le informa de si la compra está
+completada; nunca vemos tus datos de pago. Como Sentrybell incluye la biblioteca Play Billing de Google, la app
+declara acceso a la red para que esa biblioteca pueda comunicarse con Google Play. Lo que esa biblioteca envíe a
+Google se rige por la <a href="https://policies.google.com/privacy?hl=es">Política de Privacidad de Google</a>, no por
+nosotros.</p>
+
+<h2>Archivos que creas</h2>
+<p><strong>Exportar ajustes</strong> guarda los nombres y ajustes de tus cámaras en un archivo en el lugar que elijas,
+y <strong>Compartir</strong> en Diagnóstico envía el texto registrado a la app que elijas. Esos archivos son tuyos;
+consérvalos o bórralos como quieras.</p>
+
+<h2>Permisos y para qué</h2>
+<table>
+  <tr><th>Permiso</th><th>Para qué</th></tr>
+  <tr><td>Acceso a notificaciones</td><td>Leer las notificaciones de Tapo y Kasa, como se describe arriba.</td></tr>
+  <tr><td>Publicar notificaciones</td><td>Mostrar la notificación de la alarma con su botón DETENER y un aviso cuando una alarma quedó sin detener.</td></tr>
+  <tr><td>Alarma a pantalla completa y mostrar sobre otras apps</td><td>Abrir la alarma sobre la pantalla de bloqueo y sobre la app que estés usando.</td></tr>
+  <tr><td>Servicio en primer plano (reproducción multimedia), mantener activo, vibración</td><td>Mantener la alarma sonando y vibrando hasta que la detengas. La linterna se usa igual, sin acceso a la cámara.</td></tr>
+  <tr><td>Funcionar sin restricciones de batería</td><td>Para que Android no duerma la alarma. Opcional; lo activas tú en Configuración.</td></tr>
+  <tr><td>Red y facturación de Google Play</td><td>Las añade la biblioteca Play Billing de Google para la compra de Pro.</td></tr>
+</table>
+
+<h2>Tus opciones</h2>
+<ul>
+  <li>Desactiva el acceso a notificaciones cuando quieras en los ajustes de Android; Sentrybell dejará de leer.</li>
+  <li>Elimina una cámara, borra el Historial y borra el Diagnóstico desde la propia app.</li>
+  <li>Al desinstalar Sentrybell se elimina todo lo que guardó en tu teléfono.</li>
+</ul>
+
+<h2>Menores</h2>
+<p>Sentrybell es una herramienta de seguridad del hogar para adultos y no está dirigida a menores.</p>
+
+<h2>Independencia</h2>
+<p>Sentrybell es una app independiente. No está creada, respaldada ni soportada por TP-Link. Tapo y Kasa son marcas de
+TP-Link, nombradas aquí solo para indicar de qué apps lee las notificaciones Sentrybell.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si esta política cambia, la nueva versión se publicará en esta dirección con una fecha nueva arriba.</p>
+
+<h2>Contacto</h2>
+<p><a href="mailto:contact@tgalphalabs.com">contact@tgalphalabs.com</a></p>
+
+</section>
+
+</main>
+
+</body>
+</html>
