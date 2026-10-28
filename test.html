@@ -4,11 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Test Sentrybell: join the closed test</title>
-<meta name="description" content="Help test Sentrybell, a loud lock-screen alarm for Tapo and Kasa camera alerts, on Android. Free, takes two minutes to join.">
+<meta name="description" content="Help test Sentrybell, a loud lock-screen alarm for Tapo and Kasa camera alerts, on Android. Free, takes about five minutes to join.">
+<link rel="alternate" hreflang="en" href="https://surialpha.github.io/sentrybell-site/test.html">
+<link rel="alternate" hreflang="es" href="https://surialpha.github.io/sentrybell-site/test-es.html">
+<link rel="alternate" hreflang="x-default" href="https://surialpha.github.io/sentrybell-site/test.html">
 <style>
-  :root { --bg:#ffffff; --fg:#1b2430; --muted:#566274; --line:#d9e0e8; --accent:#1b6fc2; --btn-fg:#ffffff; }
+  :root { --bg:#ffffff; --fg:#1b2430; --muted:#566274; --line:#d9e0e8; --accent:#1b6fc2; --btn-fg:#ffffff; --card:#f4f7fb; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg:#10161f; --fg:#e6ebf2; --muted:#9aa7b8; --line:#2a3544; --accent:#6db4ff; --btn-fg:#10161f; }
+    :root { --bg:#10161f; --fg:#e6ebf2; --muted:#9aa7b8; --line:#2a3544; --accent:#6db4ff; --btn-fg:#10161f; --card:#17202c; }
   }
   html { background:var(--bg); }
   body { margin:0 auto; max-width:46rem; padding:1.5rem 1rem 4rem; background:var(--bg); color:var(--fg);
@@ -18,39 +21,116 @@
   p, li { margin:.5rem 0; }
   a { color:var(--accent); }
   .muted { color:var(--muted); }
+  .top { display:flex; justify-content:space-between; gap:1rem; margin:0 0 .5rem; }
   .btn { display:inline-block; padding:.7rem 1.2rem; border-radius:.5rem; background:var(--accent); color:var(--btn-fg);
          font-weight:600; text-decoration:none; margin:.5rem 0; }
-  ol li { margin:.9rem 0; }
+  .callout { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--accent);
+             border-radius:.5rem; padding:.5rem 1rem; margin:1.25rem 0; }
+  .callout ul { margin:.25rem 0; padding-left:1.25rem; }
+  .note { background:var(--card); border-radius:.4rem; padding:.4rem .75rem; margin:.6rem 0; }
+  ol.steps { list-style:none; counter-reset:step; padding:0; margin:1rem 0; }
+  ol.steps > li { counter-increment:step; position:relative; margin:.9rem 0; padding:.9rem 1rem .9rem 3.5rem;
+                  border:1px solid var(--line); border-radius:.75rem; }
+  ol.steps > li::before { content:counter(step); position:absolute; left:1rem; top:.9rem; width:1.9rem; height:1.9rem;
+                          border-radius:50%; background:var(--accent); color:var(--btn-fg); font-weight:700;
+                          text-align:center; line-height:1.9rem; }
+  .step-title { display:block; font-size:1.1rem; font-weight:700; }
+  .expect { color:var(--muted); font-size:.95rem; }
+  details { border:1px solid var(--line); border-radius:.5rem; padding:.1rem 1rem; margin:.6rem 0; }
+  summary { cursor:pointer; font-weight:600; padding:.5rem 0; }
+  details[open] summary { margin-bottom:.1rem; }
+  @media (max-width:30rem) { .btn { display:block; text-align:center; } }
 </style>
 </head>
 <body>
 
 <main>
-  <p><a href="./">&larr; Sentrybell</a></p>
+  <div class="top">
+    <a href="./">&larr; Sentrybell</a>
+    <a href="test-es.html" hreflang="es" lang="es">Español</a>
+  </div>
   <h1>Help test Sentrybell</h1>
   <p class="muted">A loud lock-screen alarm for Tapo and Kasa camera alerts, for Android.</p>
 
-  <p>Sentrybell is in a closed test on Google Play. Google requires every new app to be tried by real people for
-  14 days before it can be released, and that is where you come in. It is free, and joining takes about two
-  minutes.</p>
+  <p>Sentrybell is in a closed test on Google Play: a private test, open only to people who sign up, before the public
+  release. Google asks new developers to have real people try their app for 14 days before it can be released, and
+  that is where you come in. It is free, you do not need a camera, and joining takes about five minutes, including a
+  short wait in the middle.</p>
+
+  <div class="callout">
+    <p><strong>Before you start</strong></p>
+    <ul>
+      <li>Do this on your <strong>Android phone</strong>, running Android 8.0 or newer (you can check in Settings, then
+        About phone).</li>
+      <li><strong>Pick ONE Google account and use it in steps 1, 2 and 3.</strong> A personal Gmail is the safest choice,
+        because work or school accounts may not be able to join tests. To see your accounts, open the Play Store app and
+        tap your picture or initial at the top right. If Google ever asks you to "Choose an account", pick that same one.
+        Most problems come from using a different account in a step.</li>
+      <li>Joining the group shares your Google account's email address with us, the developer, and nobody else.</li>
+    </ul>
+  </div>
 
   <h2>How to join</h2>
-  <ol>
-    <li><strong>Join the tester group</strong> with the Google account you use on your Android phone.<br>
-      <a class="btn" href="https://groups.google.com/g/sentrybell-testers">Join the tester group</a></li>
-    <li><strong>Open the test link</strong> (your Google Play opt-in page) and tap <em>Become a tester</em>.<br>
-      <a class="btn" href="https://play.google.com/apps/testing/com.tgalphalabs.sentrybell">Become a tester on Google Play</a><br>
-      <span class="muted">Use the same Google account you joined the group with.</span></li>
-    <li><strong>Install Sentrybell</strong> from Google Play using the link on that page.</li>
-    <li><strong>Keep it installed and use it for 14 days.</strong> Please do not uninstall it early: the test only
-      counts if testers stay opted in the whole time.</li>
+  <ol class="steps">
+    <li><span class="step-title">Join the tester group</span>
+      This is a Google Group, our list of testers. Tap the button, then tap <em>Join group</em> and confirm if it asks.
+      Nothing else to do there. Use your chosen account.<br>
+      <a class="btn" href="https://groups.google.com/g/sentrybell-testers">Join the tester group</a>
+      <p class="note"><strong>Now wait about 5 minutes before step 2</strong> (a timer helps). Google needs a little time
+      to notice that you joined.</p></li>
+    <li><span class="step-title">Become a tester</span>
+      Same account. Tap the button, then tap <em>Become a tester</em> on the page that opens. The page should then say
+      you are a tester.<br>
+      <a class="btn" href="https://play.google.com/apps/testing/com.tgalphalabs.sentrybell">Become a tester on Google Play</a></li>
+    <li><span class="step-title">Install Sentrybell</span>
+      Same account. Tap the button to open Sentrybell in Google Play, then tap <em>Install</em>.<br>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.tgalphalabs.sentrybell">Download Sentrybell on Google Play</a><br>
+      <span class="expect">During the test, searching for "Sentrybell" in Google Play may not find it, so use this button.
+      If the page says <em>Item not found</em>, see "Something not working?" below.</span></li>
+    <li><span class="step-title">Keep it for 14 days</span>
+      Keep Sentrybell installed and open it now and then. Please do not uninstall it, do not tap <em>Leave the program</em>
+      on the Google Play tester page, and do not leave the Google Group. Google counts the test only if at least 12
+      testers stay signed up the whole time. Then try the things in "After you install" below.</li>
   </ol>
 
-  <h2>What to try</h2>
+  <h2>Something not working?</h2>
+  <details>
+    <summary>The page says "Item not found" or the app is not available</summary>
+    <p>This is usually one of two things.</p>
+    <ul>
+      <li><strong>A different Google account.</strong> The account that joined the group must be the one signed in to the
+        Play Store. To see which account joined, open the group page from step 1: your account is shown at the top right.
+        To see or switch the Play Store account, tap your picture or initial at the top right of the Play Store app. If
+        they differ, switch the Play Store to the account that joined, or repeat steps 1 and 2 with the Play Store's
+        account.</li>
+      <li><strong>Too soon.</strong> Google can take a while to notice steps 1 and 2: usually a few minutes, sometimes
+        up to several hours. Wait, then tap the step 3 button again.</li>
+    </ul>
+    <p>Also check that you did steps 1 and 2 in that order. If it still fails after a few hours, email us (see below).</p>
+  </details>
+  <details>
+    <summary>I do not see the "Become a tester" button</summary>
+    <p>You are probably not signed in to Google in your phone's browser, or you are signed in with an account that has not
+    joined the group. Sign in with the right account (top right of the page) and open step 2 again. If a page asks you to
+    "Choose an account", pick the one you chose at the start.</p>
+  </details>
+  <details>
+    <summary>I started on a computer</summary>
+    <p>Please do all the steps on your phone: it is the simplest way, and the app installs on the phone anyway. Open this
+    page again on your phone and go through steps 2 and 3 there.</p>
+  </details>
+  <details>
+    <summary>It still does not work</summary>
+    <p>Email <a href="mailto:contact@tgalphalabs.com">contact@tgalphalabs.com</a> and tell us which step you are on and
+    what the screen says. A screenshot helps.</p>
+  </details>
+
+  <h2>After you install: what to try</h2>
   <ul>
-    <li>Open the menu, choose <strong>Test alarm</strong>, then <strong>Ring</strong>. You do not need a camera for this.
-      Lock your phone while it rings and press STOP from the lock screen.</li>
-    <li>Open the menu, then <strong>Setup &amp; permissions</strong>, and see how far it gets you.</li>
+    <li>Open Sentrybell, tap the three dots at the top right, choose <strong>Test alarm</strong>, then <strong>Ring</strong>.
+      It will be loud, and you do not need a camera for this. Lock your phone while it rings and press STOP from the lock
+      screen.</li>
+    <li>In the same three-dots menu, choose <strong>Setup &amp; permissions</strong> and see how far it gets you.</li>
     <li>If you own a <strong>Tapo</strong> or <strong>Kasa</strong> camera, add it with the + button, typing its name as it
       appears in its notifications, and see whether a real alert rings. This is the most useful thing you can tell us,
       especially for Kasa, which has not yet been tried with a live camera.</li>
@@ -62,15 +142,13 @@
   <p>Tell us what you find at <a href="mailto:contact@tgalphalabs.com">contact@tgalphalabs.com</a>. Honest feedback,
   good or bad, is what helps.</p>
 
-  <h2>What you need to know first</h2>
+  <h2>What you need to know</h2>
   <ul>
-    <li>You need an Android phone running Android 8.0 or newer, and a Google account.</li>
-    <li>To work, Sentrybell asks for <strong>notification access</strong>. It reads only the Tapo and Kasa apps'
-      notifications, keeps everything on your phone and sends nothing anywhere. Read the
+    <li>To work, Sentrybell asks for <strong>notification access</strong>, a permission Android asks you to allow. It reads
+      only the Tapo and Kasa apps' notifications, keeps everything on your phone and sends nothing anywhere. Read the
       <a href="privacy.html">privacy policy</a> for the details.</li>
-    <li>Joining the group shares your Google account's email address with the app's developer only. Other testers cannot
-      see it.</li>
-    <li>There is no payment, and we do not pay for ratings or reviews, so please only leave one if you mean it.</li>
+    <li>There is no payment, and we never pay for ratings or reviews. During the test, Google Play does not take public
+      reviews, so please send feedback by email.</li>
   </ul>
 
   <p class="muted">Sentrybell is an independent app by T&amp;G Alphalabs. It is not made, endorsed or supported by

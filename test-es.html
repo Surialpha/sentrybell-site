@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prueba Sentrybell: únete a la prueba cerrada</title>
+<meta name="description" content="Ayuda a probar Sentrybell, una alarma fuerte en la pantalla de bloqueo para las alertas de cámaras Tapo y Kasa, en Android. Gratis, unirse toma unos cinco minutos.">
+<link rel="alternate" hreflang="en" href="https://surialpha.github.io/sentrybell-site/test.html">
+<link rel="alternate" hreflang="es" href="https://surialpha.github.io/sentrybell-site/test-es.html">
+<link rel="alternate" hreflang="x-default" href="https://surialpha.github.io/sentrybell-site/test.html">
+<style>
+  :root { --bg:#ffffff; --fg:#1b2430; --muted:#566274; --line:#d9e0e8; --accent:#1b6fc2; --btn-fg:#ffffff; --card:#f4f7fb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#10161f; --fg:#e6ebf2; --muted:#9aa7b8; --line:#2a3544; --accent:#6db4ff; --btn-fg:#10161f; --card:#17202c; }
+  }
+  html { background:var(--bg); }
+  body { margin:0 auto; max-width:46rem; padding:1.5rem 1rem 4rem; background:var(--bg); color:var(--fg);
+         font:1rem/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .25rem; }
+  h2 { font-size:1.25rem; margin:2rem 0 .5rem; padding-top:.5rem; border-top:1px solid var(--line); }
+  p, li { margin:.5rem 0; }
+  a { color:var(--accent); }
+  .muted { color:var(--muted); }
+  .top { display:flex; justify-content:space-between; gap:1rem; margin:0 0 .5rem; }
+  .btn { display:inline-block; padding:.7rem 1.2rem; border-radius:.5rem; background:var(--accent); color:var(--btn-fg);
+         font-weight:600; text-decoration:none; margin:.5rem 0; }
+  .callout { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--accent);
+             border-radius:.5rem; padding:.5rem 1rem; margin:1.25rem 0; }
+  .callout ul { margin:.25rem 0; padding-left:1.25rem; }
+  .note { background:var(--card); border-radius:.4rem; padding:.4rem .75rem; margin:.6rem 0; }
+  ol.steps { list-style:none; counter-reset:step; padding:0; margin:1rem 0; }
+  ol.steps > li { counter-increment:step; position:relative; margin:.9rem 0; padding:.9rem 1rem .9rem 3.5rem;
+                  border:1px solid var(--line); border-radius:.75rem; }
+  ol.steps > li::before { content:counter(step); position:absolute; left:1rem; top:.9rem; width:1.9rem; height:1.9rem;
+                          border-radius:50%; background:var(--accent); color:var(--btn-fg); font-weight:700;
+                          text-align:center; line-height:1.9rem; }
+  .step-title { display:block; font-size:1.1rem; font-weight:700; }
+  .expect { color:var(--muted); font-size:.95rem; }
+  details { border:1px solid var(--line); border-radius:.5rem; padding:.1rem 1rem; margin:.6rem 0; }
+  summary { cursor:pointer; font-weight:600; padding:.5rem 0; }
+  details[open] summary { margin-bottom:.1rem; }
+  @media (max-width:30rem) { .btn { display:block; text-align:center; } }
+</style>
+</head>
+<body>
+
+<main>
+  <div class="top">
+    <a href="./">&larr; Sentrybell</a>
+    <a href="test.html" hreflang="en" lang="en">English</a>
+  </div>
+  <h1>Ayúdanos a probar Sentrybell</h1>
+  <p class="muted">Una alarma fuerte en la pantalla de bloqueo para las alertas de cámaras Tapo y Kasa, en Android.</p>
+
+  <p>Sentrybell está en una prueba cerrada en Google Play: una prueba privada, abierta solo a quienes se inscriben,
+  antes del lanzamiento público. Google pide a los desarrolladores nuevos que personas reales prueben su app durante
+  14 días antes de poder publicarla, y ahí entras tú. Es gratis, no necesitas una cámara y unirte toma unos cinco
+  minutos, incluida una pequeña espera en la mitad. Quienes prueban la app se llaman <em>testers</em> (en algunos
+  teléfonos aparece como «verificadores»).</p>
+
+  <div class="callout">
+    <p><strong>Antes de empezar</strong></p>
+    <ul>
+      <li>Hazlo en tu <strong>teléfono Android</strong>, con Android 8.0 o superior (puedes comprobarlo en Ajustes, luego
+        Acerca del teléfono).</li>
+      <li><strong>Elige UNA cuenta de Google y úsala en los pasos 1, 2 y 3.</strong> Lo más seguro es un Gmail personal,
+        porque las cuentas de trabajo o de colegio pueden no poder unirse a pruebas. Para ver tus cuentas, abre la app
+        Play Store y toca tu foto o inicial arriba a la derecha. Si Google te pide «Elegir una cuenta», escoge siempre la
+        misma. La mayoría de los problemas vienen de usar una cuenta distinta en algún paso.</li>
+      <li>Unirte al grupo comparte el correo de tu cuenta de Google con nosotros, los desarrolladores, y con nadie
+        más.</li>
+    </ul>
+  </div>
+
+  <h2>Cómo unirte</h2>
+  <ol class="steps">
+    <li><span class="step-title">Únete al grupo de testers</span>
+      Es un Grupo de Google, nuestra lista de testers. Toca el botón, luego toca <em>Unirse al grupo</em>
+      (<em>Join group</em>) y confirma si te lo pide. No hay nada más que hacer ahí. Usa la cuenta que elegiste.<br>
+      <a class="btn" href="https://groups.google.com/g/sentrybell-testers">Unirme al grupo de testers</a>
+      <p class="note"><strong>Ahora espera unos 5 minutos antes del paso 2</strong> (ayuda poner un temporizador). Google
+      necesita un poco de tiempo para registrar que te uniste.</p></li>
+    <li><span class="step-title">Hazte tester</span>
+      La misma cuenta. Toca el botón de abajo y, en la página que se abre, toca el botón para ser tester. Según tu teléfono
+      dice «Convertirme en verificador», «Convertirse en tester» o «Become a tester». La página debería confirmarte que ya
+      eres tester.<br>
+      <a class="btn" href="https://play.google.com/apps/testing/com.tgalphalabs.sentrybell">Hacerme tester en Google Play</a></li>
+    <li><span class="step-title">Instala Sentrybell</span>
+      La misma cuenta. Toca el botón para abrir Sentrybell en Google Play y luego toca <em>Instalar</em>.<br>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.tgalphalabs.sentrybell">Descargar Sentrybell en Google Play</a><br>
+      <span class="expect">Durante la prueba, es posible que Sentrybell no aparezca si la buscas en Google Play, así que usa
+      este botón. Si la página dice <em>No se encontró el elemento</em> (<em>Item not found</em>), mira «¿Algo no
+      funciona?» más abajo.</span></li>
+    <li><span class="step-title">Consérvala 14 días</span>
+      Deja Sentrybell instalada y ábrela de vez en cuando. Por favor no la desinstales, no toques <em>Salir del
+      programa</em> (<em>Leave the program</em>) en la página de testers de Google Play y no salgas del Grupo de Google.
+      Google cuenta la prueba solo si al menos 12 testers siguen inscritos todo el tiempo. Luego prueba lo que aparece en
+      «Después de instalar» más abajo.</li>
+  </ol>
+
+  <h2>¿Algo no funciona?</h2>
+  <details>
+    <summary>La página dice «No se encontró el elemento» o la app no está disponible</summary>
+    <p>Normalmente se debe a una de estas dos cosas.</p>
+    <ul>
+      <li><strong>Una cuenta de Google distinta.</strong> La cuenta que se unió al grupo debe ser la que tiene la sesión
+        iniciada en la Play Store. Para ver cuál se unió, abre la página del grupo del paso 1: tu cuenta aparece arriba a
+        la derecha. Para ver o cambiar la cuenta de la Play Store, toca tu foto o inicial arriba a la derecha en la app.
+        Si son distintas, cambia la Play Store a la cuenta que se unió, o repite los pasos 1 y 2 con la cuenta de la Play
+        Store.</li>
+      <li><strong>Demasiado pronto.</strong> Google puede tardar en registrar los pasos 1 y 2: normalmente unos minutos, a
+        veces hasta varias horas. Espera y vuelve a tocar el botón del paso 3.</li>
+    </ul>
+    <p>Revisa también que hiciste los pasos 1 y 2 en ese orden. Si después de unas horas sigue fallando, escríbenos (mira
+    abajo).</p>
+  </details>
+  <details>
+    <summary>No veo el botón para hacerme tester</summary>
+    <p>Probablemente no tienes la sesión de Google iniciada en el navegador de tu teléfono, o la iniciaste con una cuenta
+    que no se ha unido al grupo. Inicia sesión con la cuenta correcta (arriba a la derecha de la página) y abre otra vez el
+    paso 2. Si una página te pide «Elegir una cuenta», escoge la que elegiste al principio.</p>
+  </details>
+  <details>
+    <summary>Empecé en una computadora</summary>
+    <p>Por favor haz todos los pasos en tu teléfono: es lo más sencillo, y la app se instala en el teléfono de todas formas.
+    Abre esta página otra vez en el teléfono y haz ahí los pasos 2 y 3.</p>
+  </details>
+  <details>
+    <summary>Sigue sin funcionar</summary>
+    <p>Escríbenos a <a href="mailto:contact@tgalphalabs.com">contact@tgalphalabs.com</a> y cuéntanos en qué paso estás y
+    qué dice la pantalla. Una captura de pantalla ayuda.</p>
+  </details>
+
+  <h2>Después de instalar: qué probar</h2>
+  <ul>
+    <li>Abre Sentrybell, toca los tres puntos arriba a la derecha, elige <strong>Probar alarma</strong> y luego
+      <strong>Sonar</strong>. Sonará fuerte, y no necesitas una cámara para esto. Bloquea el teléfono mientras suena y
+      presiona DETENER desde la pantalla de bloqueo.</li>
+    <li>En el mismo menú de tres puntos, elige <strong>Configuración y permisos</strong> y mira hasta dónde te lleva.</li>
+    <li>Si tienes una cámara <strong>Tapo</strong> o <strong>Kasa</strong>, agrégala con el botón + escribiendo su nombre
+      tal como aparece en sus notificaciones, y mira si suena una alerta real. Es lo más útil que nos puedes contar,
+      sobre todo con Kasa, que todavía no se ha probado con una cámara real. <strong>Ojo:</strong> en la versión 1.0, las
+      alertas de «persona detectada» pueden no sonar en teléfonos configurados en español; ya lo corregimos para la
+      próxima versión. Si te ocurre, envíanos una captura de la notificación a
+      <a href="mailto:contact@tgalphalabs.com">contact@tgalphalabs.com</a>.</li>
+    <li>Busca cualquier cosa confusa, lenta o rota, en inglés o en español.</li>
+    <li>Escríbenos a <a href="mailto:contact@tgalphalabs.com">contact@tgalphalabs.com</a> y dinos qué marca de cámara tienes
+      (Tapo, Kasa u otra), aunque no pruebes una alerta real. Nos ayuda a decidir con qué cámaras la hacemos compatible
+      después.</li>
+  </ul>
+  <p>Escríbenos a <a href="mailto:contact@tgalphalabs.com">contact@tgalphalabs.com</a> y cuéntanos lo que encuentres. Los
+  comentarios sinceros, buenos o malos, son los que ayudan.</p>
+
+  <h2>Lo que debes saber</h2>
+  <ul>
+    <li>Para funcionar, Sentrybell pide <strong>acceso a las notificaciones</strong>, un permiso que Android te pide
+      autorizar. Solo lee las notificaciones de las apps Tapo y Kasa, mantiene todo en tu teléfono y no envía nada a ninguna
+      parte. Lee la <a href="privacy.html#es">política de privacidad</a> para ver los detalles.</li>
+    <li>No hay ningún pago, y nunca pagamos por calificaciones ni reseñas. Durante la prueba, Google Play no recibe reseñas
+      públicas, así que envíanos tus comentarios por correo.</li>
+  </ul>
+
+  <p class="muted">Sentrybell es una app independiente de T&amp;G Alphalabs. TP-Link no la crea, no la avala ni le da
+  soporte. Tapo y Kasa son marcas de TP-Link, nombradas aquí solo para indicar de qué apps se leen las notificaciones.</p>
+</main>
+
+</body>
+</html>
